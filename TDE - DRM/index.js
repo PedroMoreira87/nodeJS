@@ -17,7 +17,7 @@ app.use(
 app.use(express.json());
 
 // routes
-const personRoutes = require('./routes/person').router;
+const personRoutes = require('./routes/person');
 app.use('/person', personRoutes);
 
 app.get('/', (req, res) => {
