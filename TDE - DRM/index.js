@@ -17,8 +17,8 @@ app.use(
 app.use(express.json());
 
 // routes
-const personRoutes = require('./routes/person');
-app.use('/person', personRoutes);
+const personRouter = require('./routes/personRouter');
+app.use('/person', personRouter);
 
 app.get('/', (req, res) => {
   res.json({message: 'Hey express'})
