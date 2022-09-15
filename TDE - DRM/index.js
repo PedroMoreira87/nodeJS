@@ -24,7 +24,6 @@ app.get('/', (req, res) => {
   res.json({message: 'Hey express'})
 });
 
-
 // port
 mongoose
   .connect(
